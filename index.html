@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Consultar CEP</title>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center mt-28">
+        <h1 class="text-3xl font-bold mb-8">Consulta de CEP</h1>
+        <div class="flex mb-4">
+            <input type="text" id="cepInput" class="w-64 px-3 py-2 border rounded-lg mr-2">
+            <button id="buscarCep" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Buscar Cep</button>
+        </div>
+        <!-- RESULTADO -->
+        <div class="mb-4">
+            <div id="resultado" class="mb-4 px-3 py-2">
+                <table class="table-auto">
+                    <thead>
+                        <tr>
+                            <th class="px-12 py-6">CEP</th>
+                            <th class="px-12 py-6">Logradouro</th>
+                            <th class="px-12 py-6">Bairro</th>
+                            <th class="px-12 py-6">Cidade</th>
+                            <th class="px-12 py-6">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- DOM VIA JAVASCRIPT -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- AQUI VAI O MAPA -->
+            <div id="mapa" class="mb-4 px-4 py-5 h-64">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
