@@ -1,6 +1,6 @@
 class CepService {
     constructor() {
-        this.endpoint = "http://viacep.com.br/ws";
+        this.endpoint = "https://viacep.com.br/ws";
     }
 
     async buscarCep(cep) {
