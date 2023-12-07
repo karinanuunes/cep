@@ -9,7 +9,7 @@ class CepService {
             console.log('Início da requisição');
             if(response.status === 200) {
                 const data = await response.json();
-                console.log('Requisição com sucesso');
+                console.log('Requisição feita com sucesso');
                 return data;
             } else {
                 console.error({
@@ -17,10 +17,10 @@ class CepService {
                   stackTraceError: error,
                   date: Date.now(),
                   method: 'BuscarCep',
-                  descriptionError: 'Cep não foi encotrado',
+                  descriptionError: 'Cep não foi encontrado',
                   code: [50]
                 });
-                throw new Error('Cep não foi encotrado');
+                throw new Error('Cep não foi encontrado');
               }
         
         } catch (error) {
